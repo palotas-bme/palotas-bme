@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-	background-color: rgb(246, 249, 249);
+    background-color: #fff3d8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+}
+
+footer {
+    text-align: center;
+}
+
+.images-constiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container {
+    text-align: center;
+    width: 256px;
 }
