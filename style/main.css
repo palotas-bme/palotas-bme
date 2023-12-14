@@ -6,6 +6,7 @@ body {
     background-color: #fff3d8;
     max-width: 800px;
     margin: auto;
+    background-image: linear-gradient(180deg, rgba(202, 255, 247, 0.684) 0%, rgba(255, 255, 255, 0.732) 50%, rgba(207, 255, 201, 0.732) 100%)
 }
 
 .container {
@@ -13,11 +14,15 @@ body {
     flex-direction: column;
 }
 
-.content {
+footer {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
-footer {
-    text-align: center;
+footer > img {
+    height: 1rem;
 }
 
 .images-constiner {
@@ -29,4 +34,14 @@ footer {
 .image-container {
     text-align: center;
     width: 256px;
+}
+
+.image-container > img {
+    transition: .3s;
+    filter: grayscale(100%) blur(3px);
+}
+
+.image-container > img:hover {
+    transition: .3s;
+    filter: grayscale(0%);
 }
