@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff3d8;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: auto;
+    background-image: linear-gradient(145deg, hsl(79, 100%, 95%) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(30, 90%, 97%, 1) 100%);
+    font-size: 22px;
+}
+
+#calculations {
+    background-color: hsl(245, 90%, 51%);
+    background-image: linear-gradient(60deg, hsl(133, 96%, 35%), hsl(231, 62%, 24%));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.delete-button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.list-item-name {
+    min-width: 150px;
+}
+
+.list-item-price {
+    max-width: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.item-error {
+    color: red;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informatika MC - Shop</title>
+        <link type="text/css" href="style/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="calculations">
+                <div id="average-price">Average price: <span id="avg">0</span></div>
+                <div id="price-sd">Standard deviation of prices: <span id="stdDev">0</span></div>
+                <div id="cheapest">One of the three cheapest:<span id="cheap">&nbsp;</span></div>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="items">
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Sör" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="200" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Laptop" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="512000" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Gemkapocs" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="1" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Könyv" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="3600" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Fogpiszkáló" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="2" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="list-item-name" placeholder="Item name" onchange="checkNameAndPrices()" value="Tea" /></td>
+                            <td>
+                                <input class="list-item-price" type="number" min="0" placeholder="Price" onchange="calc()" value="98" />
+                            </td>
+                            <td><button class="delete-button">Remove</button></td>
+                            <td class="item-error"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="addRow()">Add</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/shop.js" defer></script>
+        <script type="text/javascript" src="scripts/main.js" defer></script>
+    </body>
+</html>
