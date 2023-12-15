@@ -10,10 +10,10 @@ function calc() {
     }
     const prices = items.map((x) => x.price);
     const avg = prices.reduce((x, y) => x + y) / prices.length;
-    document.getElementById('avg').textContent = avg;
+    document.getElementById('avg').textContent = avg.toFixed(2);
 
     const stdDev = Math.sqrt(prices.map((x) => Math.pow(x - avg, 2)).reduce((x, y) => x + y) / prices.length);
-    document.getElementById('stdDev').textContent = stdDev;
+    document.getElementById('stdDev').textContent = stdDev.toFixed(2);
 
     if (items.length > 3) {
         const oneOfTheCheapest = items.sort((x, y) => x.price - y.price)[Math.floor(Math.random() * 3)];
@@ -41,8 +41,6 @@ function addItem() {
     }
     document.getElementById('item-name-error').textContent = '\u00a0';
     document.getElementById('item-price-error').textContent = '\u00a0';
-
-    const newItem = new Item(name, price);
 
     calc();
 }
