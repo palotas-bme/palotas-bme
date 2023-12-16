@@ -1,3 +1,6 @@
+// Most of the functions in this file are DOM manipulation, which is a real hasstle 
+// in TypeScript without a framework, so this is in plain javascript.
+
 function calc() {
     checkNameAndPrices();
     const items = Array.from(document.getElementById('items').children).map((row) => {
@@ -15,8 +18,11 @@ function calc() {
     const stdDev = Math.sqrt(prices.map((x) => Math.pow(x - avg, 2)).reduce((x, y) => x + y) / prices.length);
     document.getElementById('stdDev').textContent = stdDev.toFixed(2);
 
-    if (items.length > 3) {
-        const oneOfTheCheapest = items.sort((x, y) => x.price - y.price)[Math.floor(Math.random() * 3)];
+    // Three is an arbitrary small number. It cound be anything else.
+    // The requirements are not clear this need some clarification.
+    const NUMBER_OF_CHEAPEST = 3
+    if (items.length > NUMBER_OF_CHEAPEST) {
+        const oneOfTheCheapest = items.sort((x, y) => x.price - y.price)[Math.floor(Math.random() * NUMBER_OF_CHEAPEST)];
         document.getElementById('cheap').textContent = oneOfTheCheapest.name;
     } else {
         document.getElementById('cheap').textContent = 'Must be more than three items';
