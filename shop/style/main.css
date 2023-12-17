@@ -7,7 +7,7 @@ body {
     max-width: 800px;
     min-height: 100vh;
     margin: auto;
-    background-image: linear-gradient(145deg, hsl(79, 100%, 95%) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(30, 90%, 97%, 1) 100%);
+    background-image: linear-gradient(145deg, hsl(60, 48%, 68%) 0%, hsla(0, 0%, 100%, 1) 50%, rgb(111, 237, 168) 100%);
     font-size: 22px;
 }
 
@@ -15,6 +15,7 @@ body {
     background-color: hsl(245, 90%, 51%);
     background-image: linear-gradient(60deg, hsl(133, 96%, 35%), hsl(231, 62%, 24%));
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -28,13 +29,22 @@ body {
 }
 
 .delete-button {
-    background-color: transparent;
+    background-color: hsla(0, 0%, 100%, .4);
     box-shadow: none;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+.delete-button:hover {
+    background-color: hsla(0, 0%, 16%, 0.8);
+    color: rgb(255, 196, 196);
+    transition: 300ms;
+}
+.delete-button:active {
+    background-color: hsla(0, 0%, 100%, .8);
+    box-shadow: 2px 2px hsl(231, 62%, 24%);
 }
 
 .list-item-name {
