@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='width=dev
-ice-width, initial-scale=1'>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=dev
+ice-width, initial-scale=1"
+        />
         <title>Informatika MC - Strings</title>
     </head>
     <body>
         <div id="input-container">
-        <ul id="input-strings">
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-            <li><input type="text" /></li>
-        </ul>
-        <button id="add-input" onclick="addOption()">Add more</button>
-    </div>
+            <ul id="input-strings">
+                <li><input type="text" value="String 1" /></li>
+                <li><input type="text" value="String 2" /></li>
+                <li><input type="text" value="String 3" /></li>
+                <li><input type="text" value="String 4" /></li>
+                <li><input type="text" value="String 5" /></li>
+                <li><input type="text" value="String 6" /></li>
+                <li><input type="text" value="String 7" /></li>
+            </ul>
+            <button id="add-input" onclick="addOption()">Add more</button>
+        </div>
         <button id="get-random" onclick="getRandom()">Get 3 random</button>
         <ol>
             <li>First random string: <span id="string1"></span></li>
@@ -26,6 +29,5 @@ ice-width, initial-scale=1'>
             <li>Third random string: <span id="string3"></span></li>
         </ol>
         <script src="scripts/getstrings.js" type="text/javascript" defer></script>
-        <script src="scripts/main.js" type="text/javascript" defer></script>
     </body>
 </html>
