@@ -7,7 +7,7 @@ body {
     max-width: 800px;
     min-height: 100vh;
     margin: auto;
-    background-image: linear-gradient(145deg, hsl(60, 48%, 68%) 0%, hsla(0, 0%, 100%, 1) 50%, rgb(111, 237, 168) 100%);
+    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), hsl(231, 94%, 93%), hsl(183, 88%, 46%)) no-repeat 0 0;
     font-size: 22px;
 }
 

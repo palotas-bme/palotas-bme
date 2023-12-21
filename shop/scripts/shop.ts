@@ -131,3 +131,11 @@ Array.from(document.getElementsByClassName('delete-button')).forEach((x) => {
     x.addEventListener('click', remove);
 });
 calc();
+
+document.addEventListener('mousemove', evt => {
+    let x = evt.clientX / innerWidth;
+    let y = evt.clientY / innerHeight;
+ 
+    document.documentElement.style.setProperty('--mouse-x', x.toString());
+    document.documentElement.style.setProperty('--mouse-y', y.toString());
+});
